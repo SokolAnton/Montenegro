@@ -1,0 +1,188 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1320px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.d-flex-center-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+@include maxWidth($middle-desktop) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@include maxWidth($small-desktop) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@include maxWidth($tablet) {
+    .container {
+        max-width: 720px;
+
+    }
+}
+
+@include maxWidth($mobile) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@include maxWidth(950px) {
+    .check+.check{
+        margin-left: 0 !important;
+    }
+    .check {
+        margin-bottom: 59px;
+    }
+    .main {
+        &--steps {
+            padding-top: 0;
+            .steps {
+                &--line {
+                    display: none;
+                }
+
+                &--container {
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+
+                    .container {
+                        &--svg {
+                            svg {
+                                margin-bottom: 4px;
+                            }
+
+                            .svg {
+                                &--img {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        &--tourist {
+            img {
+                width: 100%;
+            }
+
+            .tourist {
+                &--container {
+
+                    .container {
+                        &--content {
+                            display: flex;
+                            flex-direction: column;
+
+                            .content {
+                                &--review {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include maxWidth(850px){
+    .main{
+        
+    }
+    .navigation {
+        &--container {
+            .container {
+                &--wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    .wrapper {
+                        &--logo {
+                            margin-bottom: 32px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .main {
+        &--booknowSec {
+            .booknowSec {
+                &--container {
+                    .container {
+                        &--card {
+                            .card{
+                                &--butn{
+                                    .butn{
+                                        &--link{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes wave {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+

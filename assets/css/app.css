@@ -1,0 +1,877 @@
+.header {
+  background-image: url(../img/HeaderBackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.header--container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 290px;
+}
+.header--container .container--data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header--container .container--data .data--heading {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.header--container .container--data .data--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+.header--container .container--data .data--search {
+  width: 49%;
+  padding: 4px 5px;
+  background-color: white;
+  margin-bottom: 208px;
+  display: flex;
+  justify-content: space-between;
+}
+.header--container .container--data .data--search input {
+  width: 100%;
+  padding: 0 36px 0 31px;
+  border: none;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #999999;
+}
+.header--container .container--data .data--search button {
+  display: inline-flex;
+  padding: 16px 24px;
+  background-color: #5373FD;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.header--container .container--data .data--search button svg {
+  margin-right: 12px;
+}
+.header--container .container--data .data--scroll {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 120px;
+}
+.header--container .container--data .data--scroll a {
+  color: #FFFFFF;
+}
+.header--container .container--data .data--scroll p {
+  margin-bottom: 4px;
+}
+
+.navigation {
+  position: relative;
+  background-color: #5373FD;
+  padding: 32px 0;
+  width: 100%;
+}
+.navigation input {
+  display: none;
+}
+.navigation--container .container--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation--container .container--wrapper .wrapper--logo {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.navigation--container .container--wrapper .wrapper--nav .nav--list {
+  list-style: none;
+}
+.navigation--container .container--wrapper .wrapper--nav .nav--list li + li {
+  margin-left: 40px;
+}
+.navigation--container .container--wrapper .wrapper--nav .nav--list .list--el {
+  display: inline-block;
+}
+.navigation--container .container--wrapper .wrapper--nav .nav--list .list--el .el--link {
+  display: inline-block;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 1s ease;
+}
+.navigation--container .container--wrapper .wrapper--nav .nav--list .list--el .el--link:hover {
+  color: rgb(255, 217, 217);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .header .navigation--container .container--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .navigation--container .container--wrapper .wrapper--logo {
+    margin-bottom: 32px;
+  }
+}
+.main--why {
+  background-image: url(../img/WhyBackground-1920.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.main--why .why--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.main--why .why--container .container--text {
+  display: flex;
+  flex-direction: column;
+  max-width: 648px;
+}
+.main--why .why--container .container--text .text--title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 24px;
+}
+.main--why .why--container .container--text .text--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.main--why .why--container .container--text .text--butn .butn--link {
+  padding: 20px 32px;
+  background-color: #5373FD;
+  display: inline-flex;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.main--why .why--container .container--text .text--butn .butn--link:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+.main--why .why--container .container--images {
+  display: flex;
+  flex-direction: column;
+}
+.main--why .why--container .container--images .images--img2 {
+  margin-left: 74px;
+  margin-top: 16px;
+}
+.main--steps {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.main--steps .steps--line {
+  position: absolute;
+  z-index: 0;
+}
+.main--steps .steps--container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.main--steps .steps--container .container--svg {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.main--steps .steps--container .container--svg .svg--img {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.main--steps .steps--container .container--svg .svg--img .img--check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main--steps .steps--container .container--svg .svg--img .img--check p {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.main--booknow {
+  background-image: url(../img/render-1477041_1280\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main--booknow .booknow--container {
+  padding: 220px 0 120px 0;
+}
+.main--booknow .booknow--container .container--card {
+  width: 49.2%;
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+}
+.main--booknow .booknow--container .container--card .card--title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.main--booknow .booknow--container .container--card .card--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 16px 0;
+}
+.main--booknow .booknow--container .container--card .card--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.main--booknow .booknow--container .container--card .card--butn .butn--link {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-flex;
+  background-color: #5373FD;
+  padding: 20px 56px;
+  transition: all 0.5s ease;
+  width: 36.5%;
+  max-width: 213px;
+}
+.main--booknow .booknow--container .container--card .card--butn .butn--link:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+.main--booknowSec {
+  background-image: url(../img/spain-1859434_1280\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main--booknowSec .booknowSec--container {
+  padding: 220px 0 120px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.main--booknowSec .booknowSec--container .container--card {
+  width: 49.2%;
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+}
+.main--booknowSec .booknowSec--container .container--card .card--title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.main--booknowSec .booknowSec--container .container--card .card--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 16px 0;
+}
+.main--booknowSec .booknowSec--container .container--card .card--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-flex;
+  background-color: #5373FD;
+  padding: 20px 56px;
+  transition: all 0.5s ease;
+  width: 36.5%;
+  max-width: 213px;
+}
+.main--booknowSec .booknowSec--container .container--card .card--butn .butn--link:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+.main--tourist {
+  background-image: url(../img/BG1920.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main--tourist .tourist--container {
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+.main--tourist .tourist--container .container--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main--tourist .tourist--container .container--content .content--title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.main--tourist .tourist--container .container--content .content--review {
+  display: flex;
+  flex-direction: row;
+}
+.main--tourist .tourist--container .container--content .content--review .review--text {
+  max-width: 885px;
+  padding: 35px 60px;
+  background-color: #333333;
+}
+.main--tourist .tourist--container .container--content .content--review .review--text .text--title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.main--tourist .tourist--container .container--content .content--review .review--text .text--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.check + .check {
+  margin-left: 220px;
+}
+
+.burger--wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  width: 40px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition-duration: 0.25s;
+}
+
+.menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menubox {
+  visibility: hidden;
+  position: relative;
+  left: -100%;
+  width: 576px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5373FD;
+}
+
+.menu--items {
+  padding-top: 6px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.menu-item {
+  display: block;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 24px;
+  transition-duration: 0.25s;
+}
+
+.menu-item {
+  transition: all 0.15s ease;
+}
+
+.menu-item:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+
+#menu-toggle {
+  opacity: 0;
+}
+
+#menu-btn {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menubox {
+  visibility: visible;
+  left: 0;
+}
+
+@media screen and (max-width: 665px) {
+  .burger--wrapper {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+.footer {
+  background-color: #000000;
+}
+.footer svg {
+  fill: white;
+}
+.footer--container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer--container .container--title {
+  margin-bottom: 8px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(255, 0, 0, 0.6) 30%, rgb(255, 0, 0) 50%, rgba(255, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  -webkit-animation: wave 2s infinite;
+          animation: wave 2s infinite;
+}
+.footer--container .container--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer--container .container--svg svg {
+  transition: all 0.5s ease;
+}
+.footer--container .container--svg a + a {
+  margin-left: 32px;
+}
+.footer--container .container--svg svg:hover {
+  fill: #5373FD;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container, .navigation--container {
+  max-width: 1320px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.d-flex-center-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+@media screen and (max-width: 1360px) {
+  .container, .navigation--container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container, .navigation--container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container, .navigation--container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container, .navigation--container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .check + .check {
+    margin-left: 0 !important;
+  }
+  .check {
+    margin-bottom: 59px;
+  }
+  .main--steps {
+    padding-top: 0;
+  }
+  .main--steps .steps--line {
+    display: none;
+  }
+  .main--steps .steps--container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main--steps .steps--container .container--svg svg {
+    margin-bottom: 4px;
+  }
+  .main--steps .steps--container .container--svg .svg--img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main--tourist img {
+    width: 100%;
+  }
+  .main--tourist .tourist--container .container--content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main--tourist .tourist--container .container--content .content--review {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 850px) {
+  .navigation--container .container--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation--container .container--wrapper .wrapper--logo {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
+    width: 100%;
+  }
+}
+@-webkit-keyframes wave {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .header--container .container--data {
+    width: 100%;
+  }
+  .main .main--why .why--container .container--text .text--desc {
+    width: 100%;
+  }
+  .main .main--steps .steps--container .container--svg svg + svg {
+    margin-left: 252px;
+  }
+  .main .main--booknow .booknow--container {
+    margin-left: auto;
+  }
+  .main .main--booknow .booknow--container .container--card {
+    width: 48.9%;
+  }
+  .main .main--booknowSec .booknowSec--container {
+    margin-left: auto;
+  }
+  .main .main--booknowSec .booknowSec--container .container--card {
+    width: 48.9%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .check + .check {
+    margin-left: 270px;
+  }
+  .header--container .container--data .data--search {
+    width: 67%;
+  }
+  .main--why .why--container .container--images .images--img2 {
+    margin-left: 36px;
+  }
+  .main--booknow .booknow--container .container--card {
+    width: 57.2% !important;
+  }
+  .main--booknowSec .booknowSec--container .container--card {
+    width: 57.2% !important;
+  }
+  .main--tourist .tourist--container {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .check + .check {
+    margin-left: 0;
+  }
+  .header--container .container--data .data--search {
+    width: 100%;
+  }
+  .main--why .why--container {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+  .main--why .why--container .container--images {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+  .main--why .why--container .container--images .images--img1 img {
+    width: 100%;
+  }
+  .main--why .why--container .container--images .images--img2 {
+    margin-top: 0;
+  }
+  .main--why .why--container .container--images .images--img2 img {
+    width: 100%;
+  }
+  .main--why .why--container .container--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 720px;
+    margin-bottom: 24px;
+  }
+  .main--why .why--container .container--text .text--desc {
+    text-align: center;
+  }
+  .main--booknow .booknow--container {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main--booknow .booknow--container .container--card {
+    width: 100% !important;
+  }
+  .main--booknowSec .booknowSec--container {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main--booknowSec .booknowSec--container .container--card {
+    width: 100% !important;
+  }
+  .main--tourist .tourist--container .container--content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main--tourist .tourist--container .container--content .content--review {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header--container .container--data .data--search {
+    max-width: 540px;
+  }
+  .navigation--container .container--wrapper .wrapper--nav {
+    display: none;
+  }
+  .navigation--container .container--wrapper .wrapper--logo {
+    margin-bottom: 0;
+  }
+}
+.main--why .why--container .container--images {
+  margin-bottom: 37px;
+}
+.main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
+  width: 100%;
+}
+.main--booknow .booknow--container .container--card .card--butn .butn--link {
+  width: 100%;
+}/*# sourceMappingURL=app.css.map */

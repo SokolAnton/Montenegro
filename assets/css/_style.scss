@@ -1,0 +1,446 @@
+// header
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:$middle-desktop) {
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .main {
+        .main {
+            &--why {
+                .why {
+                    &--container {
+                        .container {
+                            &--text {
+                                .text {
+
+                                    &--desc {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--steps {
+                .steps {
+                    &--container {
+                        .container {
+                            &--svg {
+                                svg+svg {
+                                    margin-left: 252px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &--booknow {
+                .booknow {
+                    &--container {
+                        margin-left: auto;
+
+                        .container {
+                            &--card {
+                                width: 48.9%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--booknowSec {
+                .booknowSec {
+                    &--container {
+                        margin-left: auto;
+
+                        .container {
+                            &--card {
+                                width: 48.9%;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--tourist {
+                .tourist {
+                    &--container {
+                        .container {
+                            &--content {
+                                .content {
+                                    &--review {
+                                        .review {
+                                            &--text {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:$small-desktop) {
+    .check+.check{
+        margin-left: 270px;
+    }
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    .data {
+                        &--search {
+                            width: 67%;
+
+                            input {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        &--why {
+            .why {
+                &--container {
+
+                    .container {
+                        &--images {
+
+                            .images {
+                                &--img2 {
+                                    margin-left: 36px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--steps {
+            .steps {
+                &--line {}
+            }
+
+            .container {}
+        }
+
+        &--booknow {
+            .booknow {
+                &--container {
+
+                    .container {
+                        &--card {
+                            width: 57.2% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--booknowSec {
+            .booknowSec {
+                &--container {
+
+                    .container {
+                        &--card {
+                            width: 57.2% !important;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &--tourist {
+            .tourist {
+                &--container {
+                    padding-top: 50px;
+
+                    .container {
+                        &--content {
+                            .content {
+                                &--review {
+                                    .review {
+                                        &--text {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:$tablet) {
+    .check+.check{
+        margin-left: 0;
+    }
+   
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    .data {
+                        &--search {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+
+    .main {
+        &--why {
+            .why {
+                &--container {
+                    max-width: 720px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    padding-top: 45px;
+                    padding-bottom: 60px;
+
+                    .container {
+                        &--images {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 32px;
+
+                            .images {
+                                &--img1{
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                &--img2 {
+                                    img{
+                                        width: 100%;
+
+                                    }
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+
+                        &--text {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            max-width: 720px;
+                            margin-bottom: 24px;
+
+                            .text {
+                                &--desc {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+       
+
+        &--booknow {
+            .booknow {
+                &--container {
+                    padding: 120px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .container {
+                        &--card {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--booknowSec {
+            .booknowSec {
+                &--container {
+                    padding: 120px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .container {
+                        &--card {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--tourist {
+            .tourist {
+                &--container {
+
+                    .container {
+                        &--content {
+                            display: flex;
+                            flex-direction: column;
+
+                            .content {
+                                &--review {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and(max-width:$mobile) {
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    .data {
+                        &--search {
+                            max-width: 540px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navigation {
+        &--container {
+            .container {
+                &--wrapper {
+                    .wrapper {
+                        &--nav {
+                            display: none;
+                        }
+
+                        &--logo {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    &--why {
+        .why {
+            &--container {
+                .container {
+                    &--text {
+                        .text {
+                            &--title {}
+                        }
+                    }
+
+                    &--images {
+                        margin-bottom: 37px;
+
+                        .images {
+                            &--img2 {
+                                
+                            }
+                        }
+                    }
+
+                    &--text {
+
+                        .text {
+                            &--desc {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--booknowSec {
+        .booknowSec {
+            &--container {
+                .container {
+                    &--card {
+                        .card {
+                            &--butn {
+                                .butn {
+                                    &--link {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+        &--booknow {
+            .booknow {
+                &--container {
+                    .container {
+                        &--card {
+                            .card {
+                                &--butn {
+                                    .butn {
+                                        &--link {
+                                            width: 100%;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
